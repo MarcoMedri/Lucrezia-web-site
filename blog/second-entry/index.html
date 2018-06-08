@@ -1,32 +1,85 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/main.css">
-    <title>Second Entry - Web Portfolio of Marco</title>
-  </head>
-  <body>
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li class="active"><a href="/blog/">Blog</a></li>
-          <li><a href="/projects/">Projects</a></li>
-          <li><a href="/contact/">Contact</a></li>
+<!-- <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/main.css">
+<title>Second Entry - Web Portfolio of Marco</title>
+</head> -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/main.css">
+  <title>My personal website</title>
+</head>
+
+<!-- ############## Nav Bar ############## -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <ul id="barraNavigazione"class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <!-- <li><a href="/blog/">Blog</a></li> -->
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/blog/first-entry/">Test 1</a></li>
+          <li class="active"><a href="/blog/second-entry/">Test 2</a></li>
         </ul>
-      </div>
-    </div>
+      </li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/about/">About</a></li>
+      <li ><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- ############## Nav Bar End ############## -->
 
+<body>
+  <div class="page-header">
     <div class="container">
-      <h1 class="title">Second Entry</h1>
-      <p>April 9, 2015</p>
-
-      <hr>
-
-      <p>This is my second blog entry.</p>
+      <h1 align="center", class="title", color >Lucrezia's House</h1>
     </div>
-  </body>
+  </div>
+
+  <div class="container">
+    <h1 class="title">Second Entry</h1>
+    <p>April 9, 2015</p>
+
+    <hr>
+
+    <p>This is my second blog entry.</p>
+  </div>
+
+  <!-- Contacts section start -->
+  <div class="section" id="contacts">
+
+    <h1 id="Mycontacts" align=center>Follow Me</h1>
+    <div align=center>
+      <a href="https://plus.google.com/112865144067752688288" target="_blank">
+        <img alt="Google+" src="/support/img/footer/googleplus.png" height="30" width="30"/>
+      </a>
+      <a href="https://m.facebook.com/profile.php?id=1352409281&ref=content_filter" target="_blank">
+        <img alt="Facebook" src="/support/img/footer/facebookIcon.png" height="30" width="30"/>
+      </a>
+      <a href="https://www.linkedin.com/in/lucrezia-rescigno-725031b9" target="_blank">
+        <img alt="Linkedin" src="/support/img/footer/linkedin_circle.png" height="30" width="30"/>
+      </a>
+      <a href="#">
+        <img alt="Instagram" src="/support/img/footer/instagramIcon.jpg" height="30" width="30"/>
+      </a>
+      <a href="#" >
+        <img alt="YouTube" src="/support/img/footer/youtubeIcon.png" height="30" width="30"/>
+      </a>
+    </div>
+  </div>
+  <!-- Contacts section end -->
+
+  <footer>
+    <font size="1" color="black">© 2017 Lucrezia's Blog. All rights reserved.</font>
+  </footer>
+
+</body>
 </html>

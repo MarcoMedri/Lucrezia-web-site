@@ -1,34 +1,44 @@
 <!DOCTYPE html>
- <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/main.css">
-    <title>My personal website</title>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/main.css">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jua"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>My personal website</title>
+</head>
 
-  <body>
-    <div class="page-header">
-      <div class="container">
-        <h1 align="center", class="title", color >Lucrezia's House</h1>
-    </div>
 
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/projects/">Projects</a></li>
-          <li><a href="/contact/">Contact</a></li>
+<!-- ############## Nav Bar ############## -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <ul id="barraNavigazione"class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <!-- <li><a href="/blog/">Blog</a></li> -->
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/blog/first-entry/">Test 1</a></li>
+          <li><a href="/blog/second-entry/">Test 2</a></li>
         </ul>
-      </div>
-    </div>
+      </li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- ############## Nav Bar End ############## -->
 
-
-
+<body>
+  <div class="page-header">
     <div class="container">
-
+      <h1 align="center", class="title", color >Discover the site</h1>
+    </div>
+    <div class="container">
 
       <h2>Firt of all Welcome!Thanks for stopping by, and here is a first description.</h2>
 
@@ -36,130 +46,97 @@
 
       <div id="sidebar"></div><!--#sidebar-->
 
-    <!-- About Me section start -->
-       <div class="section">
-           <h1><span>About Me</span></h1>
-           <p>
-               Hey! I'm <strong>Lucrezia</strong>. Coding has changed my world. It's not just about apps. Learning to code gave me <i>problem-solving skills</i> and a way to communicate with others on a technical level. I can also develop websites and use my coding skills to get a better job. And I learned it all at <strong>SoloLearn</strong> where they build your self-esteem and keep you motivated. Join me in this rewarding journey. You'll have fun, get help, and learn along the way!
-           </p>
-           <p class="quote">"Declare variables, not war"</p>
-       </div>
-       <!-- About Me section end -->
 
-       <!-- My Schedule section start -->
-       <div class="section">
-           <h1><span>My Coding Schedule</span></h1>
-           <table>
-               <tr>
-                   <th>Day</th>
-                   <th>Mon</th>
-                   <th>Tue</th>
-                   <th>Wed</th>
-                   <th>Thu</th>
-                   <th>Fri</th>
-               </tr>
-               <tr>
-                   <td>8-8:30</td>
-                   <td class="selected">Learn</td>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td>9-10</td>
-                   <td></td>
-                   <td class="selected">Practice</td>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td>1-1:30</td>
-                   <td></td>
-                   <td></td>
-                   <td class="selected">Play</td>
-                   <td></td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td>3:45-5</td>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-                   <td class="selected">Code</td>
-                   <td></td>
-               </tr>
-               <tr>
-                   <td>6-6:15</td>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-                   <td></td>
-                   <td class="selected">Discuss</td>
-               </tr>
-           </table>
-       </div>
-       <!-- My Schedule section end -->
+<!-- Transizione centrale -->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="/support/img/centrale/1.PNG" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="/support/img/centrale/2.PNG" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="/support/img/centrale/3.PNG" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Fine transiwione centrale -->
+<div class="container">
+  <h2>Status of the website</h2>
+  <p>Here are the part still in progress:</p>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40% Complete (personal style design)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      50% Complete (information inside the site)
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+      60% Complete (downloadable material)
+    </div>
+  </div>
+</div>
+<!-- Progession bar -->
+
+<!-- Fine progression Bar -->
 
 
-       <!-- My Skills section start -->
-       <div class="section">
-           <h1><span>My Skills</span></h1>
-           <ul>
-               <li>HTML <br />
-                   <progress min="0" max="100" value="80"></progress>
-               </li>
-               <li>JavaScript <br />
-                   <progress min="0" max="100" value="50"></progress>
-               </li>
-               <li>Python <br />
-                   <progress min="0" max="100" value="30"></progress>
-               </li>
-           </ul>
-       </div>
-       <!-- My Skills section end -->
+    <!-- Contacts section start -->
+    <div class="section" id="contacts">
 
+      <h1 id="Mycontacts" align=center>Follow Me</h1>
+      <div align=center>
+        <a href="https://plus.google.com/112865144067752688288" target="_blank">
+          <img alt="Google+" src="/support/img/footer/googleplus.png" height="30" width="30"/>
+        </a>
+        <a href="https://m.facebook.com/profile.php?id=1352409281&ref=content_filter" target="_blank">
+          <img alt="Facebook" src="/support/img/footer/facebookIcon.png" height="30" width="30"/>
+        </a>
+        <a href="https://www.linkedin.com/in/lucrezia-rescigno-725031b9" target="_blank">
+          <img alt="Linkedin" src="/support/img/footer/linkedin_circle.png" height="30" width="30"/>
+        </a>
+        <a href="#">
+          <img alt="Instagram" src="/support/img/footer/instagramIcon.jpg" height="30" width="30"/>
+        </a>
+        <a href="#" >
+          <img alt="YouTube" src="/support/img/footer/youtubeIcon.png" height="30" width="30"/>
+        </a>
+      </div>
+    </div>
+    <!-- Contacts section end -->
 
-        <!-- Media section start
-       <div class="section">
-           <h1><span>My Media</span></h1>
-           <iframe height="150" width="300" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0"></iframe>
-       </div> -->
-       <!-- Media section end -->
+    <footer>
+      <font size="1" color="black">© 2017 Lucrezia's Blog. All rights reserved.</font>
+    </footer>
 
+  </div> <!--#container-->
 
-       <!-- Tutta la parte contact section -->
-
-<!-- Contacts section start -->
-       <div class="section" id="contacts">
-
-           <h1 id="Mycontacts" align=center>Follow Me</h1>
-           <div align=center>
-               <a href="https://plus.google.com/112865144067752688288" target="_blank">
-                   <img alt="Google+" src="/support/img/googleplus.png" height="30" width="30"/>
-               </a>
-               <a href="https://m.facebook.com/profile.php?id=1352409281&ref=content_filter" target="_blank">
-                   <img alt="Facebook" src="/support/img/facebookIcon.png" height="30" width="30"/>
-               </a>
-               <a href="https://www.linkedin.com/in/lucrezia-rescigno-725031b9" target="_blank">
-                   <img alt="Linkedin" src="/support/img/linkedin_circle.png" height="30" width="30"/>
-               </a>
-               <a href="#">
-                   <img alt="Instagram" src="/support/img/instagramIcon.jpg" height="30" width="30"/>
-               </a>
-               <a href="#" >
-                   <img alt="YouTube" src="/support/img/youtubeIcon.png" height="30" width="30"/>
-               </a>
-           </div>
-       </div>
-       <!-- Contacts section end -->
-
-   <footer>
-           <font size="1" color="black">© 2017 Lucrezia's Blog. All rights reserved.</font>
-   </footer>
-
-</div> <!--#container-->
-
-  </body>
+</body>
 </html>

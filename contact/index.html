@@ -1,36 +1,137 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/main.css">
-    <title>Contact - Web Portfolio of Marco</title>
-  </head>
-  <body>
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/projects/">Projects</a></li>
-          <li class="active"><a href="/contact/">Contact</a></li>
+<!-- <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/main.css">
+<title>Contact - Web Portfolio of Marco</title>
+</head> -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>My personal website</title>
+</head>
+
+<!-- ############## Nav Bar ############## -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <ul id="barraNavigazione"class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <!-- <li><a href="/blog/">Blog</a></li> -->
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/blog/first-entry/">Test 1</a></li>
+          <li><a href="/blog/second-entry/">Test 2</a></li>
         </ul>
-      </div>
-    </div>
+      </li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/about/">About</a></li>
+      <li class="active"><a href="/contact/">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- ############## Nav Bar End ############## -->
 
+<body>
+  <div class="page-header">
     <div class="container">
-      <h1 class="title">Contact</h1>
-
-      <p>
-        You can contact me by email: <a href="mailto:spammails@gmx.ch">spammails@gmx.ch</a>
-      </p>
-
-      <p>
-        Marco Jakob<br>
-        Switzerland
-      </p>
+      <h1 align="center", class="title", color >Don't hesitate to contact me</h1>
     </div>
-  </body>
+  </div>
+
+  <div class="container">
+    <h1 >Here are my contacts</h1>
+
+    <p>
+      You can contact me by the following way:
+    </p>
+    <ul style="list-style-type:square">
+      <li>e-email:</li>
+      <li>Phone number:</li>
+      <li>Phone number:</li>
+    </ul>
+
+  </div>
+
+  <div align=center>
+    <legend align=center>My actual position</legend>
+    <p align="center" id="map" style="width:80%;height:300px"></p>
+
+    <script>
+    function myMap() {
+      var toulouse = new google.maps.LatLng(43.604652,1.444209);
+
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = {center: toulouse, zoom: 10};
+      var map = new google.maps.Map(mapCanvas,mapOptions);
+
+      var myCity = new google.maps.Circle({
+        center: toulouse,
+        radius: 5000,
+        strokeColor: "#878ff4",
+        strokeOpacity: 1,
+        strokeWeight: 1,
+        fillColor: "#87ddf4",
+        fillOpacity: 0.3
+      });
+      var marker = new google.maps.Marker({position:toulouse});
+      marker.setMap(map);
+      var infowindow = new google.maps.InfoWindow({
+        content: "Here I am :)"
+      });
+      myCity.setMap(map);
+
+      google.maps.event.addListener(marker, 'click', function () {
+        infowindow.open(map, marker);
+    });
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4NTi69-r7VcQ10SufsgeabTo5P67k-F8&callback=myMap"></script>
+    <!--
+    To use this code on your website, get a free API key from Google.
+    Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+  -->
+
+  </div>
+
+
+
+
+
+  <!-- Contacts section start -->
+  <div class="section" id="contacts">
+
+    <h1 id="Mycontacts" align=center>Follow Me</h1>
+    <div align=center>
+      <a href="https://plus.google.com/112865144067752688288" target="_blank">
+        <img alt="Google+" src="/support/img/footer/googleplus.png" height="30" width="30"/>
+      </a>
+      <a href="https://m.facebook.com/profile.php?id=1352409281&ref=content_filter" target="_blank">
+        <img alt="Facebook" src="/support/img/footer/facebookIcon.png" height="30" width="30"/>
+      </a>
+      <a href="https://www.linkedin.com/in/lucrezia-rescigno-725031b9" target="_blank">
+        <img alt="Linkedin" src="/support/img/footer/linkedin_circle.png" height="30" width="30"/>
+      </a>
+      <a href="#">
+        <img alt="Instagram" src="/support/img/footer/instagramIcon.jpg" height="30" width="30"/>
+      </a>
+      <a href="#" >
+        <img alt="YouTube" src="/support/img/footer/youtubeIcon.png" height="30" width="30"/>
+      </a>
+    </div>
+  </div>
+  <!-- Contacts section end -->
+
+  <footer>
+    <font size="1" color="black">© 2017 Lucrezia's Blog. All rights reserved.</font>
+  </footer>
+</body>
 </html>
