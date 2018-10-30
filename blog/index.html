@@ -1,38 +1,308 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+  crossorigin="anonymous">
+  <script type="text/javascript" src="/js_Site.js"></script>
+  <title>My personal website</title>
+</head>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/main.css">
-    <title>Blog - Web Portfolio of Marco</title>
-  </head>
-  <body>
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li class="active"><a href="/blog/">Blog</a></li>
-          <li><a href="/projects/">Projects</a></li>
-          <li><a href="/contact/">Contact</a></li>
-        </ul>
+<body>
+  <header>
+    <!--  Icon Superior  -->
+    <section id="sezioneAlta" class"container-fluid">
+      <div>
+        <a href="https://plus.google.com/112865144067752688288" target="_blank">
+          <!-- <i class="fab fa-linkedin-in" color="black"></i> -->
+          <img src='/support/img/social/google-plus-g.svg' height="19.2" width="25.6" onmouseover="this.src='/support/img/social/google-plus-g1.svg';"
+          onmouseout="this.src='/support/img/social/google-plus-g.svg';" />
+        </a>
+        <a href="https://m.facebook.com/profile.php?id=1352409281&ref=content_filter" target="_blank" id="facebookIcon">
+          <img src='/support/img/social/facebook.svg' height="19.2" width="25.6" onmouseover="this.src='/support/img/social/facebook1.svg';"
+          onmouseout="this.src='/support/img/social/facebook.svg';" />
+        </a>
+        <a href="https://www.linkedin.com/in/lucrezia-rescigno-725031b9" target="_blank">
+          <!-- <i class="fa fa-linkedin" style="font-size:30px; color:black"></i> -->
+          <img src='/support/img/social/linkedin-in.svg' height="19.2" width="25.6" onmouseover="this.src='/support/img/social/linkedin-in1.svg';"
+          onmouseout="this.src='/support/img/social/linkedin-in.svg';" />
+        </a>
+        <a href="#">
+          <img src='/support/img/social/instagram.svg' height="19.2" width="25.6" onmouseover="this.src='/support/img/social/instagram1.svg';"
+          onmouseout="this.src='/support/img/social/instagram.svg';" />
+        </a>
+        <a href="#">
+          <img src='/support/img/social/youtube.svg' height="19.2" width="25.6" onmouseover="this.src='/support/img/social/youtube1.svg';"
+          onmouseout="this.src='/support/img/social/youtube.svg';" />
+        </a>
       </div>
-    </div>
+    </section>
+    <!--  End Icon Superior  -->
 
-    <div class="container">
-      <h1 class="title">Blog</h1>
+    <!--  Title / Lucrezia's Logo  -->
+    <section id="sezioneTutteLePagine">
+      <h1 id="testScrittura">Discover the site</h1>
+    </section>
+    <!--  End Title / Lucrezia's Logo  -->
 
-      <p>I write about things I encounter while learning web programming.</p>
-
-      <h2>Blog Entries</h2>
-
-      <!-- Here will be a list of all the blog entries. -->
-      <ul>
-        <li>More entries will follow...</li>
-        <li><a href="second-entry/">Second Entry</a></li>
-        <li><a href="first-entry/">First Entry</a></li>
+    <!--  navbar navbar-fixed-top -->
+    <nav id="nav_bar" class="fill topnav">
+      <ul id="navigation" class="nav_links">
+        <li><a href="/">Home</a></li>
+        <!-- <li class="dropdown">
+        <a id="pippo" href="#" onmouseover="triangleUp()" onmouseout="triangleDown()" >Blog <i id="menu_hover" class="fa fa-caret-down" ></i></a>
+        <ul class="dropdown-content">
+        <li><a href="/blog/first-entry/">First Test</a></li>
+        <li><a href="/blog/second-entry/">Test number two!</a></li>
       </ul>
-    </div>
+    </li> -->
+    <li><a href="/projects/">Projects</a></li>
+    <li class="active"><a href="/about/">About</a></li>
+    <li><a href="/contact/">Contacts</a></li>
+  </ul>
+</nav>
+</header>
+
+
+<section class="page-title">
+  <div class="container">
+    <h1 align="center", class="title", color >A little bit about me</h1>
+  </div>
+</section>
+
+<!--  Story line  -->
+
+<div class="Timeline">
+
+
+  <!-- <svg height="5" width="100">
+  <line x1="0" y1="0" x2="100" y2="0" style="stroke:#004165;stroke-width:5" />
+  Sorry, your browser does not support inline SVG.
+</svg> -->
+
+<!-- first event -->
+<div class="event">
+
+  <div class="eventUpBubble">
+    <div class="MonthYear">11 November 1991</div>
+    <div class="eventTitle"> My Birth</div>
+    <div class="eventSubtitle">Finally arrive </div>
+  </div>
+  <!-- <div class="eventAuthor">by Youri Nelson</div> -->
+  <svg height="20" width="20">
+    <circle cx="10" cy="11" r="5" fill="#004165" />
+  </svg>
+  <!-- <div class="time">9 : 27 AM</div> -->
+
+</div>
+<!-- first event -->
+
+<!-- Second event -->
+<svg class="svgLine" height="5" width="100">
+  <line class="line" x1="0" y1="0" x2="100" y2="0" style="stroke:#004165;stroke-width:5" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<div class="event">
+  <div class="eventDownBubble">
+    <div class="MonthYear">June 2010</div>
+    <div class="eventTitle">High School Diploma</div>
+    <div class="eventSubtitle">Mature they said </div>
+  </div>
+  <!-- <div class="event2Author">by Tom Eggleston</div> -->
+  <svg height="20" width="20">
+    <circle cx="10" cy="11" r="5" fill="#004165" />
+  </svg>
+  <!-- <div class="time2">1 : 32 PM</div> -->
+</div>
+<!-- Second event -->
+
+<!-- Third event -->
+<svg class="svgLine" height="5" width="100">
+  <line class="line" x1="0" y1="0" x2="100" y2="0" style="stroke:#004165;stroke-width:5" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<div class="event">
+  <div class="eventUpBubble">
+    <div class="MonthYear">2011</div>
+    <div class="eventTitle"> Move in Milan</div>
+    <div class="eventSubtitle">University time </div>
+  </div>
+  <!-- <div class="eventAuthor">by Youri Nelson</div> -->
+  <svg height="20" width="20">
+    <circle cx="10" cy="11" r="5" fill="#004165" />
+  </svg>
+  <!-- <div class="time">9 : 27 AM</div> -->
+
+</div>
+
+<!-- Third event -->
+
+<!-- Fourth event -->
+<svg class="svgLine" height="5" width="100">
+  <line class="line" x1="0" y1="0" x2="100" y2="0" style="stroke:#004165;stroke-width:5" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<div class="event">
+  <div class="eventDownBubble">
+    <div class="MonthYear">2016</div>
+    <div class="eventTitle">Maste's degree</div>
+    <div class="eventSubtitle">Stop studying, I don't think so </div>
+  </div>
+  <!-- <div class="event2Author">by Tom Eggleston</div> -->
+  <svg height="20" width="20">
+    <circle cx="10" cy="11" r="5" fill="#004165" />
+  </svg>
+  <!-- <div class="time2">1 : 32 PM</div> -->
+</div>
+<!-- Fourth event -->
+
+<!-- Fifth event -->
+<svg class="svgLine" height="5" width="100">
+  <line class="line" x1="0" y1="0" x2="100" y2="0" style="stroke:#004165;stroke-width:5" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<div class="event">
+  <div class="eventUpBubble">
+    <div class="MonthYear">2017</div>
+    <div class="eventTitle"> Move in Cesena</div>
+    <div class="eventSubtitle">In the end I moved in the best city </div>
+  </div>
+  <!-- <div class="eventAuthor">by Youri Nelson</div> -->
+  <svg height="20" width="20">
+    <circle cx="10" cy="11" r="5" fill="#004165" />
+  </svg>
+  <!-- <div class="time">9 : 27 AM</div> -->
+
+</div>
+
+<!-- Fifth event -->
+
+<!-- Fourth event -->
+<svg class="svgLine" height="5" width="100">
+  <line class="line" x1="0" y1="0" x2="100" y2="0" style="stroke:#004165;stroke-width:5" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<div class="event">
+  <div class="eventDownBubble">
+    <div class="MonthYear">2018</div>
+    <div class="eventTitle">France</div>
+    <div class="eventSubtitle">Try this abroad experience</div>
+  </div>
+  <!-- <div class="event2Author">by Tom Eggleston</div> -->
+  <svg height="20" width="20">
+    <circle cx="10" cy="11" r="5" fill="#004165" />
+  </svg>
+  <!-- <div class="time2">1 : 32 PM</div> -->
+</div>
+<!-- Fourth event -->
+
+
+<!-- Present -->
+<svg class="svgLine" height="5" width="100">
+  <line class="line" x1="0" y1="0" x2="100" y2="0" style="stroke:#004165;stroke-width:5" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<div class="now">
+  NOW
+</div>
+<!-- Present -->
+
+<svg class="svgLine" height="5" width="100" >
+  <line class="line" x1="0" y1="0" x2="100" y2="0" style="stroke:rgba(162, 164, 163, 0.37);stroke-width:5" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+<div class="event futureGray ">
+  <div class="eventUpBubble upfutureOpacity">
+    <div class="MonthYear"> 201X</div>
+    <div class="eventTitle">New adventure</div>
+    <div class="eventSubtitle">Who knows</div>
+  </div>
+  <svg height="20" width="20">
+    <circle cx="10" cy="11" r="5" fill="rgba(162, 164, 163, 0.37)" />
+  </svg>
+</div>
+
+<svg height="5" width="80" >
+  <line x1="0" y1="0" x2="15" y2="0" style="stroke:rgba(162, 164, 163, 0.37);stroke-width:5" />
+  <line x1="25" y1="0" x2="40" y2="0" style="stroke:rgba(162, 164, 163, 0.37);stroke-width:5" />
+  <line x1="50" y1="0" x2="65" y2="0" style="stroke:rgba(162, 164, 163, 0.37);stroke-width:5" />
+</svg>
+
+<!-- <svg height="5" width="50">
+<line x1="0" y1="0" x2="50" y2="0" style="stroke:#004165;stroke-width:5" />
+</svg>
+<svg height="20" width="42">
+<line x1="1" y1="0" x2="1" y2="20" style="stroke:#004165;stroke-width:2" />
+<circle cx="11" cy="10" r="3" fill="#004165" />
+<circle cx="21" cy="10" r="3" fill="#004165" />
+<circle cx="31" cy="10" r="3" fill="#004165" />
+<line x1="41" y1="0" x2="41" y2="20" style="stroke:#004165;stroke-width:2" />
+</svg> -->
+
+</div>
+<!-- Story line -->
+
+<section id="circle-shape-example">
+  <img src="/support/img/lucrezia/lucreziaProfilePicture.jpg" alt="myProfilePicture" class="curveLeft">
+  <h2 class="presentationTitle1">Short presentation</h2>
+  <p>My name Is Lucrezia, I was born in Italy in 1991, exactly in Colle Val d'elsa, a small city in Tuscany.
+    <p>
+      <h2 class="presentationTitle2"> As designer </h2>
+      <p>I have always loved when useful things are also beautiful and simple and that the reason that pushed me to study design,
+        in order to be able to create new beautiful things. I am a positive girl, straightforward, full of energy and always ready to
+        learn new things. I am also a hard worker and the teamwork is my habitat.
+      </p>
+      <h2 class="presentationTitle2"> As "fit/sport" girl </h2>
+      <p>I love practice every type of sport, I never step back in front of new opportunities.
+        I usually prefer team workouts instead of individual ones, I think that share the suffering allow you to go further
+        your limits and is good meet new people as well.
+        <br>I also like practise out of the gym, running and team sports as
+        well like for istance volleyball or moreover beachvolley (To be honest I have played volleyball for several years ).
+        <br>In the end I think that mobility is essential for an healthy life, so I started to be passionate about pilates, and after
+        a while I decided to try to become an instructor. Therefore I started a very good course in Bologna and in the end I obtained
+        my certificate, and now I have the licence to teach it.
+      </p>
+      <img src="/support/img/about/World_map_-_low_resolution.svg" alt="myPlaces" class="curveRight">
+      <h2 class="presentationTitle2"> As chef (or better good eater)</h2>
+      <p>
+        To be honest I'm more a good eater than a chef, I like every kind
+        of food, starting from the starter, passing through the
+        vegetables, meat, and so on, ending with the dessert obviously. <br>
+        I hope to show you some of mine recepie and several healthy/junk meals.
+      </p>
+
+      <h2 class="presentationTitle2"> As traveller</h2>
+      <p>
+        Like a lot of people, I really love travell arround the word, both for few days
+        and for weeks (not so often unfortunatly) in order to see beautiful places and
+        meet a lot of interesting and amazing coltures. <br>
+        I hope you enjoy the map of the place that I visited in my life!
+      </p>
+
+    </section>
+    <br>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+      <a><i class="far fa-copyright"></i>  2018 Lucrezia's Blog. All rights reserved.</a>
+    </footer>
+    <!-- End Footer -->
+
   </body>
-</html>
+  </html>
