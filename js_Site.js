@@ -169,6 +169,10 @@ function modifyStoryLine(){
 }
 
 //----------- Story line -------------
+
+
+//------------ Project -------------
+
 jQuery(function($) {
   modifyStoryLine();
   var html = $('html');
@@ -275,4 +279,4 @@ jQuery(function($) {
 });
 
 
-//------------ Project
+//------------ Project -------------
