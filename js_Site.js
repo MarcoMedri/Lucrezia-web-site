@@ -11,10 +11,6 @@ var svgLines = document.getElementsByClassName('svgLine');
 // var initialWidth = $(window).width();
 //----------- Global Variables -------------
 
-$( document ).ready(function() {
-
-});
-
 //----------- Width change -------------
 $(window).resize(function(){
   // if($(document).width() < 700){
